@@ -1,0 +1,26 @@
+name: Test
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm test
+      - run: npx playwright install chromium
+      - name: Browser checks with synthetic data
+        shell: pwsh
+        run: |
+          $env:CHROME_PATH = node --input-type=module -e "import {chromium} from 'playwright'; console.log(chromium.executablePath())"
+          npm run test:ui

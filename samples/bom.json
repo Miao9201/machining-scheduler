@@ -1,0 +1,9 @@
+[
+  {
+    "productCode": "DEMO-P001",
+    "materialCode": "DEMO-M001",
+    "name": "演示毛坯",
+    "spec": "钢",
+    "usage": 1
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "requester": "备料",
+    "orderNo": "DEMO-ORDER001",
+    "productCode": "DEMO-P001",
+    "productName": "演示成品",
+    "quantity": 10,
+    "batch": "DEMO-B01",
+    "dueMode": "date",
+    "dueDate": "2026-11-01",
+    "deliveryDate": "",
+    "notes": "虚构示例，请勿当作真实生产指令"
+  }
+]

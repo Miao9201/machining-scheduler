@@ -1,0 +1,2 @@
+requester,orderNo,productCode,productName,quantity,batch,dueMode,dueDate,deliveryDate,notes
+备料,DEMO-ORDER001,DEMO-P001,演示成品,10,DEMO-B01,date,2026-11-01,,虚构示例，请勿当作真实生产指令

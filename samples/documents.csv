@@ -1,0 +1,2 @@
+id,documentNo,orderNo,productCode,batch,chain,materialCode,type,occurredAt,quantity,scrap,cancelled
+DEMO-DOC001,DEMO-QC001,DEMO-ORDER001,DEMO-P001,DEMO-B01,production,,检验单,2026-10-23T08:00:00+08:00,10,1,false

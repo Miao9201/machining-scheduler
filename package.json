@@ -1,0 +1,29 @@
+{
+  "name": "machining-scheduler",
+  "version": "1.0.1",
+  "private": true,
+  "type": "module",
+  "description": "机加总表与 S7 只读数据关联工具",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test tests/*.test.js",
+    "check": "node --check src/domain.js && node --check src/store.js && node --check src/s7.js && node --check src/csv.js && node --check src/server.js && node --check public/app.js",
+    "test:ui": "node --test tests/review-ui.mjs && node tests/e2e.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.56.1"
+  },
+  "license": "MIT",
+  "author": "Miao9201",
+  "homepage": "https://github.com/Miao9201/machining-scheduler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Miao9201/machining-scheduler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Miao9201/machining-scheduler/issues"
+  }
+}

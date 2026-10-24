@@ -1,0 +1,16 @@
+[
+  {
+    "id": "DEMO-DOC001",
+    "documentNo": "DEMO-QC001",
+    "orderNo": "DEMO-ORDER001",
+    "productCode": "DEMO-P001",
+    "batch": "DEMO-B01",
+    "chain": "production",
+    "materialCode": "",
+    "type": "检验单",
+    "occurredAt": "2026-10-23T08:00:00+08:00",
+    "quantity": 10,
+    "scrap": 1,
+    "cancelled": false
+  }
+]
